@@ -1,2 +1,2 @@
 # yandex-practicum
-work in progress
+That's about all of them
