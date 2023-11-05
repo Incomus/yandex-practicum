@@ -1,5 +1,15 @@
-# Basic SQL
-The database stores information about venture funds and investments in startup companies. This database is based on the [Startup Investments](https://www.kaggle.com/datasets/justinas/startup-investments) dataset published on the popular data mining competition platform Kaggle.
+# Basic SQL (PostgreSQL)
+
+## Course Topics
+1. Introduction to databases(SELECT, FROM)
+2. Data slices in SQL (LIMIT, OFFSET, CAST, data type, WHERE, primary and foreign keys, BOOL, IN, LIKE, BETWEEN, date, CASE)
+3. Aggregating functions. Grouping and sorting data (math and aggregating operations, GROUP BY, ORDER BY, HAVING, AS)
+4. Relationships between tables. Types of table joins (one-to-one, one-to-many, many-to-many, ER diagrams, JOIN, UNION)
+5. Subqueries and temporary tables (sub FROM,sub WHERE,sub JOIN, WITH, operator execution order, variability)
+6. PySpark (scaling, resilient distributed datasets, dataframes, missing values, spark.sql)
+7. Data schemas and window functions (OVER, PARTITION BY, ORDER BY, RANK, NTILE, agg. window func., LEAD, LAG)
+
+Project database stores information about venture funds and investments in startup companies. This database is based on the [Startup Investments](https://www.kaggle.com/datasets/justinas/startup-investments) dataset published on the popular data mining competition platform Kaggle.
 
 ![](1_Baza_dannykh_1673427255.png)
 
