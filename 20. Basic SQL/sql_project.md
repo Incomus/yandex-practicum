@@ -9,9 +9,9 @@ The database stores information about venture funds and investments in startup c
 - foreign key acquiring_company_id - refers to the company table - the identifier of the acquiring company, that is, the one that buys another company;
 - foreign key acquired_company_id - refers to the company table - the identifier of the company that is being purchased;
 - term_code — transaction payment method:
-	cash - in cash;
-	stock - company shares;
-	cash_and_stock - mixed.
+	- cash - in cash;
+	- stock - company shares;
+	- cash_and_stock - mixed.
 - price_amount — purchase amount in dollars;
 - acquired_at — transaction date;
 - created_at — date and time of creation of a record in the table;
@@ -23,15 +23,13 @@ Contains information about startup companies.
 - primary key id - identifier, or unique company number;
 - name — company name;
 - category_code — category of the company’s activity, for example:
--  
--     news - specializes in working with news;
--     social - specializes in social work.
+	- news - specializes in working with news;
+	- social - specializes in social work.
 - status — company status:
--  
--     acquired - acquired;
--     operating - operates;
--     ipo - went to IPO;
--     closed - ceased to exist.
+	- acquired - acquired;
+	- operating - operates;
+	- ipo - went to IPO;
+	- closed - ceased to exist.
 - founded_at — date of foundation of the company;
 - closed_at — company closing date, which is indicated if the company no longer exists;
 - domain — domain of the company website;
@@ -50,8 +48,8 @@ Stores information about the educational level of company employees.
 - primary key id - unique record number with information about education;
 - foreign key person_id - refers to the people table - identifier of the person whose information is presented in the record;
 - degree_type — academic degree, for example:
-	BA - Bachelor of Arts
-	MS - Master of Scienc
+	- BA - Bachelor of Arts
+	- MS - Master of Scienc
 - instituition - educational institution, name of the university;
 - graduated_at — date of completion of training, graduation;
 - created_at — date and time of creation of a record in the table;
@@ -79,9 +77,9 @@ Contains information about investment rounds.
 - foreign key company_id - refers to the company table - a unique number of the company that participated in the investment round;
 - funded_at — date of the round;
 - funding_round_type — type of investment round, for example:
-	venture - venture round;
-	angel - angel round;
-	series_a — round A.
+	- venture - venture round;
+	- angel - angel round;
+	- series_a — round A.
 - raised_amount — the amount of investment that the company raised in this round in dollars;
 - pre_money_valuation — preliminary assessment of the company’s value in dollars, carried out before investment;
 - participants — number of participants in the investment round;
