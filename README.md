@@ -1,11 +1,11 @@
 ## Table Of Content
 
-- [Yandex Music Study](#yandex-music-study)
-- [Borrower Reliability Research](#borrower-reliability-research)
+- [Yandex Music Study](#yandex-music-study) - Basic Python
+- [Borrower Reliability Research](#borrower-reliability-research) - Data Preprocessing
 
 
-# Yandex Music Study
-## [Basic Python](https://github.com/Incomus/yandex-practicum/blob/main/5.%20Basic%20Python/big-city-music.ipynb)
+# [Yandex Music Study](https://github.com/Incomus/yandex-practicum/blob/main/5.%20Basic%20Python/big-city-music.ipynb)
+## Basic Python
 
 **Purpose of the study**: Test three hypotheses:
 1. User activity depends on the day of the week, with differences between Moscow and St. Petersburg.
@@ -61,7 +61,7 @@
 
 
 # [Borrower Reliability Research](https://github.com/Incomus/yandex-practicum/blob/main/6.%20Data%20preprocessing/prep.ipynb)
-## Data preprocessing
+## Data Preprocessing
 
 
 ## Overview
