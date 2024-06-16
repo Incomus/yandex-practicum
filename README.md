@@ -1,4 +1,4 @@
-# 5. Basic Python[Jupyter Notebook](yandex-practicum/5.Basic Python/notebook.ipynb).
+# 5. Basic Python [a link](https://github.com/user/repo/blob/branch/other_file.md)
 ## Yandex Music Study
 
 **Purpose of the study**: Test three hypotheses:
