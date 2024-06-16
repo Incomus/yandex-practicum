@@ -1,4 +1,5 @@
-# Yandex Music Study
+# 5. Basic Python
+## Yandex Music Study
 
 **Purpose of the study**: Test three hypotheses:
 1. User activity depends on the day of the week, with differences between Moscow and St. Petersburg.
