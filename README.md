@@ -4,6 +4,7 @@
 - [Borrower Reliability Research](#borrower-reliability-research) - Data Preprocessing
 - [Research of Advertisements for the Sale of Apartments](#research-of-advertisements-for-the-sale-of-apartments) - Exploratory Data Analysis
 - [Cellular Operator Tariffs Analysis](#cellular-operator-tariffs-analysis) - Statistical data analysis
+- [Researching Historical Video Game Data](#Researching-Historical-Video-Game-Data) - Summary project 1
 
 
 # [Yandex Music Study](https://github.com/Incomus/yandex-practicum/blob/main/5.%20Basic%20Python/big-city-music.ipynb)
@@ -279,3 +280,82 @@ You are an analyst working for a cellular operator. Customers are offered two ta
 - Both tariffs show increasing trends in call duration and message usage throughout the year.
 - Internet usage peaks vary with Smart users typically using 15–17 GB and Ultra users 19–21 GB.
 - Hypothesis testing indicates significant differences in average revenue between "Ultra" and "Smart" tariff users (p-value < 0.05).
+
+# [Researching Historical Video Game Data](https://github.com/Incomus/yandex-practicum/blob/main/10.%20Summary%20project%201/vg_research.ipynb)
+## Summary project 1
+
+- **Name**: The name of the game
+- **Platform**: Platform
+- **Year_of_Release**: Year of release
+- **Genre**: Game genre
+- **NA_sales**: Sales in North America (millions of copies sold)
+- **EU_sales**: Sales in Europe (millions of copies sold)
+- **JP_sales**: Sales in Japan (millions of copies sold)
+- **Other_sales**: Sales in other countries (millions of copies sold)
+- **Critic_Score**: Critics' score (maximum 100)
+- **User_Score**: User rating (maximum 10)
+- **Rating**: Rating from the ESRB (Entertainment Software Rating Board)
+
+(Note: Data for 2016 may be incomplete.)
+
+## Purpose of the Study
+
+This study aims to analyze historical video game data to understand market trends and factors influencing game success. The objectives include:
+
+- Explore the games represented in the dataset and their attributes.
+- Identify patterns and correlations to determine the success metrics of video games.
+- Test hypotheses regarding the impact of reviews, genres, and platforms on game sales.
+
+## Brief Report
+
+- Data was retrieved from the `games.csv` file, covering releases up to 2016. The dataset underwent preprocessing to handle missing values and ensure data consistency.
+- A `sum_sales` column was added to quantify the global market performance of each game.
+- Detailed exploratory data analysis was conducted, focusing on trends in game releases, platform sales, genre profitability, user profiles across different regions, and the impact of ESRB ratings.
+- Hypotheses related to user and critic ratings' effects on game sales were tested using statistical methods.
+
+## General Information
+
+The dataset contains extensive information about video games released over several decades, including sales figures across different regions and critical reception metrics.
+
+## Exploratory Data Analysis
+
+### Game Releases by Year
+
+The analysis revealed a decline in game releases post-2008, with a notable uptick in recent years, particularly for certain platforms.
+
+### Sales by Platform for the Current Period (2013-2015)
+
+Platforms such as PS4 and Xbox One showed significant growth during this period, despite an overall market decline.
+
+### Impact of Reviews on Sales
+
+Critic reviews showed a moderate correlation with game sales, while user reviews exhibited varied impacts across different genres and platforms.
+
+### Distribution of Games by Genre
+
+Action games dominated the market in terms of sheer number, while genres like platformers showed higher average sales per title.
+
+### User Profiles
+
+#### Platform Popularity by Region
+
+PS4 and Xbox One led in North America and Europe, while Japan favored handheld consoles like the 3DS and PlayStation devices.
+
+#### Genre Popularity by Region
+
+North America and Europe showed a preference for action games, whereas Japan favored role-playing games and unique local genres.
+
+### Impact of ESRB Rating
+
+Games rated Mature (M) tended to sell better in North America and Europe, while Japanese sales were less influenced by ESRB ratings.
+
+## Testing Hypotheses
+
+- Average user ratings between Xbox One and PC platforms did not significantly differ (p-value: 0.14), suggesting similar user perceptions across these platforms.
+- Average user ratings between Action and Sports genres differed significantly (p-value: 1.05e-27), indicating distinct user preferences and reception between these genres.
+
+## General Conclusion
+
+- The dataset reveals significant gaps in ratings data, particularly from the Japanese market, impacting the comprehensiveness of the analysis.
+- Recent data (post-2013) provides more relevant insights into current market dynamics and platform performance.
+- PS4 and Xbox One emerged as promising platforms, with action and shooter genres being the most profitable based on average sales.
