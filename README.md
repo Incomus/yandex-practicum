@@ -3,7 +3,7 @@
 - [Yandex Music Study](#yandex-music-study) - Basic Python
 - [Borrower Reliability Research](#borrower-reliability-research) - Data Preprocessing
 - [Research of Advertisements for the Sale of Apartments](#research-of-advertisements-for-the-sale-of-apartments) - Exploratory Data Analysis
-- [Cellular Operator Tariffs Analysis](cellular-operator-tariffs-analysis) - Statistical data analysis
+- [Cellular Operator Tariffs Analysis](#cellular-operator-tariffs-analysis) - Statistical data analysis
 
 
 # [Yandex Music Study](https://github.com/Incomus/yandex-practicum/blob/main/5.%20Basic%20Python/big-city-music.ipynb)
