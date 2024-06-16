@@ -1,4 +1,3 @@
-```markdown
 # Yandex Music Study
 
 **Purpose of the study**: Test three hypotheses:
