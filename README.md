@@ -3,6 +3,7 @@
 - [Yandex Music Study](#yandex-music-study) - Basic Python
 - [Borrower Reliability Research](#borrower-reliability-research) - Data Preprocessing
 - [Research of Advertisements for the Sale of Apartments](#research-of-advertisements-for-the-sale-of-apartments) - Exploratory Data Analysis
+- [Cellular Operator Tariffs Analysis](cellular-operator-tariffs-analysis) - Statistical data analysis
 
 
 # [Yandex Music Study](https://github.com/Incomus/yandex-practicum/blob/main/5.%20Basic%20Python/big-city-music.ipynb)
@@ -231,3 +232,50 @@ This project analyzes data from Yandex.Realty, an archive of apartment sale adve
 
 The dataset includes extensive data on apartment sales, covering parameters such as area, price, and location. Analysis revealed significant correlations between apartment size and price, particularly in Saint Petersburg where proximity to the city center affects pricing dynamics. Insights gained from this study can aid in market predictions and anomaly detection for real estate transactions.
 
+# [Cellular Operator Tariffs Analysis](https://github.com/Incomus/yandex-practicum/blob/main/8.%20Statistical%20data%20analysis/cellular_tarifs.ipynb)
+## Statistical data analysis
+
+You are an analyst working for a cellular operator. Customers are offered two tariff plans: "Smart" and "Ultra". To adjust the advertising budget, the commercial department wants to understand which tariff brings in more money.
+
+## Description of Tariffs
+
+### Tariff "Smart"
+- **Monthly Fee:** 550 rubles
+- **Includes:** 500 minutes of talk time, 50 messages, 15 GB of Internet traffic
+- **Excess Charges:** 3 rubles per minute of conversation, 3 rubles per message, 200 rubles per GB of Internet traffic
+
+### Tariff "Ultra"
+- **Monthly Fee:** 1950 rubles
+- **Includes:** 3000 minutes of talk time, 1000 messages, 30 GB of Internet traffic
+- **Excess Charges:** 1 ruble per minute of conversation, 1 ruble per message, 150 rubles per GB of Internet traffic
+
+## Data Overview
+
+### Users Table
+- Total users: 500
+- Information available: user_id, age, city, registration date, tariff plan
+
+### Calls Table
+- Total calls recorded: 202,607
+- Information available: call date, duration (minutes), user_id
+
+### Messages Table
+- Total messages sent: 123,036
+- Information available: message date, user_id
+
+### Internet Sessions Table
+- Total sessions: 149,396
+- Information available: session date, data used (MB), user_id
+
+### Tariffs Table
+- Information available for "Smart" and "Ultra" tariffs:
+  - Included minutes, messages, and data (MB)
+  - Excess charges for calls, messages, and data
+
+## Data Analysis
+
+- **7.6%** of clients terminated their contracts.
+- Users on the "Ultra" tariff plan have longer average call durations compared to "Smart" users.
+- Both tariffs show increasing trends in call duration and message usage throughout the year.
+- Internet usage peaks vary with Smart users typically using 15–17 GB and Ultra users 19–21 GB.
+- Hypothesis testing indicates significant differences in average revenue between "Ultra" and "Smart" tariff users (p-value < 0.05).
