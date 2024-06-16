@@ -3,8 +3,8 @@
 - [Basic Python](#Basic-Python)
 
 
-# 5. [Basic Python](https://github.com/Incomus/yandex-practicum/blob/main/5.%20Basic%20Python/big-city-music.ipynb)
-## Yandex Music Study
+# 5. Basic Python
+## [Yandex Music Study](https://github.com/Incomus/yandex-practicum/blob/main/5.%20Basic%20Python/big-city-music.ipynb)
 
 **Purpose of the study**: Test three hypotheses:
 1. User activity depends on the day of the week, with differences between Moscow and St. Petersburg.
