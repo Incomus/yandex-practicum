@@ -8,7 +8,7 @@
 - [Introduction to Machine Learning](https://github.com/Incomus/yandex-practicum/blob/main/11.%20Introduction%20to%20machine%20learning/users_behavior.ipynb) - [Introduction to Machine Learning](#Introduction-to-Machine-Learning)
 - [Customer Churn Prediction](https://github.com/Incomus/yandex-practicum/blob/main/12.%20Teacher-student%20model/Churn.ipynb) - [Teacher-student model](#Customer-Churn-Prediction)
 - [Oil Well Location Selection](https://github.com/Incomus/yandex-practicum/blob/main/13.%20Machine%20learning%20in%20business/well_loc.ipynb) - [Machine learning in business](#Oil-Well-Location-Selection)
-- [Oil Well Location Selection](https://github.com/Incomus/yandex-practicum/blob/main/14.%20Summary%20project%202/gold_ore.ipynb) - Summary project 2
+- [Recovery of Gold from Ore](https://github.com/Incomus/yandex-practicum/blob/main/14.%20Summary%20project%202/gold_ore.ipynb) - Summary project 2
 - [Protection of Clients' Personal Data](https://github.com/Incomus/yandex-practicum/blob/main/15.%20Linear%20algebra/encryption.ipynb) - Linear algebra
 - [Determination of Car Prices](https://github.com/Incomus/yandex-practicum/blob/main/16.%20Numerical%20methods/auto_cost.ipynb) - Numerical methods
 - [Taxi Order Forecasting](https://github.com/Incomus/yandex-practicum/blob/main/17.%20Time%20series/taxi_forecast.ipynb) - Time series
