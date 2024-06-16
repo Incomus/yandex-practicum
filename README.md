@@ -2,6 +2,7 @@
 
 - [Yandex Music Study](#yandex-music-study) - Basic Python
 - [Borrower Reliability Research](#borrower-reliability-research) - Data Preprocessing
+- [Research of Advertisements for the Sale of Apartments](#research-of-advertisements-for-the-sale-of-apartments) - Exploratory Data Analysis
 
 
 # [Yandex Music Study](https://github.com/Incomus/yandex-practicum/blob/main/5.%20Basic%20Python/big-city-music.ipynb)
@@ -149,4 +150,84 @@ Here are some examples of the dataset:
 - **Loan Purpose**: Loans for cars and education have the highest share of debtors.
 
 Future analyses could include a joint study of the presence of children and marital status.
-```
+
+# [Research of Advertisements for the Sale of Apartments](https://github.com/Incomus/yandex-practicum/blob/main/7.%20Exploratory%20data%20analysis/real_estate_ads.ipynb)
+## Exploratory Data Analysis
+
+This project analyzes data from Yandex.Realty, an archive of apartment sale advertisements in St. Petersburg and nearby areas over several years. The objective is to determine market values, identify anomalies, and detect fraudulent activities for developing an automated tracking system.
+
+## Data Description
+
+- `airports_nearest`: Distance to the nearest airport in meters (m)
+- `balcony`: Number of balconies
+- `ceiling_height`: Ceiling height (m)
+- `cityCenters_nearest`: Distance to the city center (m)
+- `days_exposition`: Days the ad was active
+- `first_day_exposition`: Publication date
+- `floor`: Apartment floor
+- `floors_total`: Total floors in the building
+- `is_apartment`: Boolean indicating if it's an apartment
+- `kitchen_area`: Kitchen area in square meters (m²)
+- `last_price`: Price at removal from publication
+- `living_area`: Living area in square meters (m²)
+- `locality_name`: Name of the locality
+- `open_plan`: Boolean indicating if it has an open plan
+- `parks_around3000`: Number of parks within 3 km
+- `parks_nearest`: Distance to the nearest park (m)
+- `ponds_around3000`: Number of ponds within 3 km
+- `ponds_nearest`: Distance to the nearest pond (m)
+- `rooms`: Number of rooms
+- `studio`: Boolean indicating if it's a studio
+- `total_area`: Total area of the apartment in square meters (m²)
+- `total_images`: Number of photos in the advertisement
+
+## Exploratory Data Analysis
+
+### Studying Object Parameters
+
+- `total_area`:
+  - Mean: 60.35 m²
+  - Standard Deviation: 35.65 m²
+  - Minimum: 12 m²
+  - Maximum: 900 m²
+
+- `living_area`:
+  - Mean: 34.11 m²
+  - Standard Deviation: 21.19 m²
+  - Minimum: 2 m²
+  - Maximum: 409.7 m²
+
+- `kitchen_area`:
+  - Mean: 10.57 m²
+  - Standard Deviation: 5.91 m²
+  - Minimum: 1.3 m²
+  - Maximum: 112 m²
+
+### Price Correlation
+
+- `total_area` vs. `last_price` correlation: 0.654
+- `living_area` vs. `last_price` correlation: 0.541
+- `kitchen_area` vs. `last_price` correlation: 0.520
+- `rooms` vs. `last_price` correlation: 0.363
+
+### Top 10 Localities by Entries
+
+- Saint Petersburg: 15,721 entries
+- Murino: 556 entries
+- Kudrovo: 472 entries
+- Shushary: 440 entries
+- Vsevolozhsk: 398 entries
+- Pushkin: 369 entries
+- Kolpino: 338 entries
+- Pargolovo: 327 entries
+- Gatchina: 307 entries
+- Vyborg: 237 entries
+
+### Average Price per Kilometer in Saint Petersburg
+
+- Correlation of distance to city center vs. price: -0.250
+
+## General Conclusion
+
+The dataset includes extensive data on apartment sales, covering parameters such as area, price, and location. Analysis revealed significant correlations between apartment size and price, particularly in Saint Petersburg where proximity to the city center affects pricing dynamics. Insights gained from this study can aid in market predictions and anomaly detection for real estate transactions.
+
