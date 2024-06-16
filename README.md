@@ -6,6 +6,7 @@
 - [Cellular Operator Tariffs Analysis](#cellular-operator-tariffs-analysis) - Statistical data analysis
 - [Researching Historical Video Game Data](#Researching-Historical-Video-Game-Data) - Summary project 1
 - [Introduction to Machine Learning](#Introduction-to-Machine-Learning)
+- [Customer Churn Prediction](#Customer-Churn-Prediction) - Teacher-student model
 
 
 # [Yandex Music Study](https://github.com/Incomus/yandex-practicum/blob/main/5.%20Basic%20Python/big-city-music.ipynb)
@@ -416,10 +417,64 @@ Other models included DecisionTreeClassifier (max accuracy: 80.72%) and Logistic
 
 The highest accuracy was achieved by RandomForestClassifier, demonstrating the strongest predictive power for tariff classification.
 
-## Insights
+## Conclusion
 
 - DecisionTreeClassifier showed varying accuracy with different `max_depth` and `min_samples_leaf`.
 - RandomForestClassifier's accuracy varied with `n_estimators` and `max_depth`.
 - LogisticRegression consistently showed lower accuracy compared to tree-based models.
 
-For detailed insights, refer to the project's model evaluation and visualization sections.
+
+# [Customer Churn Prediction](https://github.com/Incomus/yandex-practicum/blob/main/12.%20Teacher-student%20model/Churn.ipynb)
+## Teacher-student model
+
+Clients are leaving Beta Bank each month, prompting the need to predict customer churn based on historical data. The goal is to build a model with the highest possible F1-measure, aiming for 0.59 on the test sample.
+
+### Data Source
+[Bank Customer Churn Modeling](https://www.kaggle.com/barelydedicated/bank-customer-churn-modeling)
+
+### Features
+- CreditScore: Credit rating
+- Geography: Country of residence
+- Gender: Gender
+- Age: Age
+- Tenure: Years as a bank client
+- Balance: Account balance
+- NumOfProducts: Number of bank products used
+- HasCrCard: Availability of a credit card
+- IsActiveMember: Client's activity status
+- EstimatedSalary: Estimated salary
+
+### Target Feature
+- Exited: Whether the client has left the bank
+
+### Purpose of the Study
+- Build a model to predict customer churn
+- Identify the model with the highest F1-measure
+- Measure AUC-ROC for model comparison
+
+### Brief Report
+- Retrieved data from `Churn.csv`.
+- Explored and preprocessed data, handling missing values and converting categorical features.
+- Built three types of classification models (Decision Tree, Random Forest, Logistic Regression) and optimized them for F1-score.
+- Corrected class imbalance using different methods (class_weight, upsample, downsample).
+- Tested and validated the best performing model (Random Forest) achieving an F1-score of 0.616 on the test sample.
+- Analyzed feature importance, identifying age as the most influential factor in predicting churn.
+
+### Model Comparison
+- **Decision Tree Classifier**: Achieved highest F1-score of 0.549 with max depth of 7.
+- **Random Forest Classifier**: Outperformed other models with an F1-score of 0.616 using 30 estimators and a max depth of 10.
+- **Logistic Regression**: Had the lowest F1-score of 0.294, indicating less suitability for this dataset.
+
+### Class Imbalance Correction
+- **Class Weight Balancing**: Increased F1-score to 0.617 by adjusting class weights.
+- **Upsampling**: Enhanced F1-score to 0.611 by replicating minority class samples.
+- **Downsampling**: Improved F1-score to 0.590 by reducing majority class samples.
+
+### Conclusion
+The RandomForestClassifier with balanced class weights provided the highest F1-score (0.616) and AUC-ROC (0.845) values, indicating its effectiveness in predicting customer churn. This model outperforms baseline and logistic regression models significantly, demonstrating its practical utility in reducing customer churn rates for Beta Bank.
+
+### Additional Insights
+- **Impact of Features**: Age, number of products used, and account balance were identified as the most influential factors in predicting churn.
+- **Model Validation**: The model's performance on the test sample confirmed its robustness, achieving an F1-score of 0.620 and AUC-ROC of 0.845.
+- **Business Recommendations**: Implement strategies based on predicted churn probabilities to proactively retain customers and optimize marketing efforts.
+```
