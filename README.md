@@ -1,7 +1,7 @@
 ## Table Of Content
 
-- [Yandex Music Study](#Yandex-Music-Study) - Basic Python
-- [Borrower Reliability Research](#Borrower-Reliability-Research) - Data preprocessing
+- [Yandex Music Study](#Yandex-Music-Study)
+- [Borrower Reliability Research](#Borrower-Reliability-Research)
 
 
 # 5. Yandex Music Study
