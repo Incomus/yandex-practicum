@@ -5,6 +5,7 @@
 - [Research of Advertisements for the Sale of Apartments](#research-of-advertisements-for-the-sale-of-apartments) - Exploratory Data Analysis
 - [Cellular Operator Tariffs Analysis](#cellular-operator-tariffs-analysis) - Statistical data analysis
 - [Researching Historical Video Game Data](#Researching-Historical-Video-Game-Data) - Summary project 1
+- [Introduction to Machine Learning](#Introduction-to-Machine-Learning)
 
 
 # [Yandex Music Study](https://github.com/Incomus/yandex-practicum/blob/main/5.%20Basic%20Python/big-city-music.ipynb)
@@ -359,3 +360,66 @@ Games rated Mature (M) tended to sell better in North America and Europe, while 
 - The dataset reveals significant gaps in ratings data, particularly from the Japanese market, impacting the comprehensiveness of the analysis.
 - Recent data (post-2013) provides more relevant insights into current market dynamics and platform performance.
 - PS4 and Xbox One emerged as promising platforms, with action and shooter genres being the most profitable based on average sales.
+
+
+# [Introduction to Machine Learning](https://github.com/Incomus/yandex-practicum/blob/main/11.%20Introduction%20to%20machine%20learning/users_behavior.ipynb)
+
+This project explores the classification of suitable tariffs based on customer behavior data. The goal is to achieve a model accuracy of at least 75% on a test sample.
+
+## Data Description
+
+Each entry represents a user's behavior over a month, including:
+- `calls`: Number of calls made
+- `minutes`: Total call duration in minutes
+- `messages`: Number of SMS messages sent
+- `mb_used`: Internet traffic consumed in MB
+- `is_ultra`: Binary indicator of the tariff used (0 - "Smart", 1 - "Ultra")
+
+## Purpose of the Study
+
+- Build and compare classification models
+- Identify the model with the highest accuracy
+- Validate model performance
+
+## Brief Report
+
+Data was sourced from the `users_behavior.csv` file. Three types of classification models were constructed using different hyperparameters. Model accuracies were assessed and hyperparameter dependencies analyzed.
+
+### Data Overview
+
+The dataset contains 3214 entries with 5 columns:
+- `calls`: float64
+- `minutes`: float64
+- `messages`: float64
+- `mb_used`: float64
+- `is_ultra`: int64
+
+## Sampling
+
+The data was split into training, validation, and test sets using a 60-20-20 ratio.
+
+## Model Creation and Testing
+
+Models were built using:
+- Decision Tree Classifier
+- Random Forest Classifier
+- Logistic Regression
+
+The best performing model was a RandomForestClassifier with:
+- `max_depth`: 7
+- `n_estimators`: 60
+- Accuracy: 81.03%
+
+Other models included DecisionTreeClassifier (max accuracy: 80.72%) and LogisticRegression (max accuracy: 71.07%).
+
+### Model Comparison
+
+The highest accuracy was achieved by RandomForestClassifier, demonstrating the strongest predictive power for tariff classification.
+
+## Insights
+
+- DecisionTreeClassifier showed varying accuracy with different `max_depth` and `min_samples_leaf`.
+- RandomForestClassifier's accuracy varied with `n_estimators` and `max_depth`.
+- LogisticRegression consistently showed lower accuracy compared to tree-based models.
+
+For detailed insights, refer to the project's model evaluation and visualization sections.
