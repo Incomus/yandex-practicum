@@ -1,7 +1,7 @@
 ## Table Of Content
 
-- [Yandex Music Study](#Yandex-Music-Study)
-- [Borrower Reliability Research](#Borrower-Reliability-Research)
+- [Yandex Music Study](#yandex-music-study)
+- [Borrower Reliability Research](#borrower-reliability-research)
 
 
 # 5. Yandex Music Study
