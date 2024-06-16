@@ -1,7 +1,7 @@
 ## Table Of Content
 
-- [Yandex Music Study](#yandex-music-study) - Basic Python
-- [Borrower Reliability Research](#borrower-reliability-research) - Data Preprocessing
+- [Yandex Music Study](https://github.com/Incomus/yandex-practicum/blob/main/5.%20Basic%20Python/big-city-music.ipynb) - [Basic Python](#yandex-music-study)
+- [Borrower Reliability Research](https://github.com/Incomus/yandex-practicum/blob/main/6.%20Data%20preprocessing/prep.ipynb) - [Data Preprocessing](#borrower-reliability-research)
 - [Research of Advertisements for the Sale of Apartments](#research-of-advertisements-for-the-sale-of-apartments) - Exploratory Data Analysis
 - [Cellular Operator Tariffs Analysis](#cellular-operator-tariffs-analysis) - Statistical data analysis
 - [Researching Historical Video Game Data](#Researching-Historical-Video-Game-Data) - Summary project 1
@@ -10,7 +10,7 @@
 - [Oil Well Location Selection](#Oil-Well-Location-Selection) - Machine learning in business
 
 
-# [Yandex Music Study](https://github.com/Incomus/yandex-practicum/blob/main/5.%20Basic%20Python/big-city-music.ipynb)
+# Yandex Music Study
 ## Basic Python
 
 **Purpose of the study**: Test three hypotheses:
@@ -66,7 +66,7 @@
 - **Third Hypothesis**: Not confirmed - similar genre preferences in both cities.
 
 
-# [Borrower Reliability Research](https://github.com/Incomus/yandex-practicum/blob/main/6.%20Data%20preprocessing/prep.ipynb)
+# Borrower Reliability Research
 ## Data Preprocessing
 
 
