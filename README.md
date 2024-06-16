@@ -61,8 +61,8 @@
 
 
 # 
-# 6. [Data preprocessing](https://github.com/Incomus/yandex-practicum/blob/main/6.%20Data%20preprocessing/prep.ipynb)
-## Borrower Reliability Research
+# 6. Data preprocessing
+## [Borrower Reliability Research](https://github.com/Incomus/yandex-practicum/blob/main/6.%20Data%20preprocessing/prep.ipynb)
 
 
 ## Overview
