@@ -2,12 +2,20 @@
 
 - [Yandex Music Study](https://github.com/Incomus/yandex-practicum/blob/main/5.%20Basic%20Python/big-city-music.ipynb) - [Basic Python](#yandex-music-study)
 - [Borrower Reliability Research](https://github.com/Incomus/yandex-practicum/blob/main/6.%20Data%20preprocessing/prep.ipynb) - [Data Preprocessing](#borrower-reliability-research)
-- [Research of Advertisements for the Sale of Apartments](#research-of-advertisements-for-the-sale-of-apartments) - Exploratory Data Analysis
-- [Cellular Operator Tariffs Analysis](#cellular-operator-tariffs-analysis) - Statistical data analysis
-- [Researching Historical Video Game Data](#Researching-Historical-Video-Game-Data) - Summary project 1
-- [Introduction to Machine Learning](#Introduction-to-Machine-Learning)
-- [Customer Churn Prediction](#Customer-Churn-Prediction) - Teacher-student model
-- [Oil Well Location Selection](#Oil-Well-Location-Selection) - Machine learning in business
+- [Research of Advertisements for the Sale of Apartments](https://github.com/Incomus/yandex-practicum/blob/main/7.%20Exploratory%20data%20analysis/real_estate_ads.ipynb) - [Exploratory Data Analysis](#research-of-advertisements-for-the-sale-of-apartments)
+- [Cellular Operator Tariffs Analysis](https://github.com/Incomus/yandex-practicum/blob/main/8.%20Statistical%20data%20analysis/cellular_tarifs.ipynb) - [Statistical data analysis](#cellular-operator-tariffs-analysis)
+- [Researching Historical Video Game Data](https://github.com/Incomus/yandex-practicum/blob/main/10.%20Summary%20project%201/vg_research.ipynb) - [Summary project 1](#Researching-Historical-Video-Game-Data)
+- [Introduction to Machine Learning](https://github.com/Incomus/yandex-practicum/blob/main/11.%20Introduction%20to%20machine%20learning/users_behavior.ipynb) - [Introduction to Machine Learning](#Introduction-to-Machine-Learning)
+- [Customer Churn Prediction](https://github.com/Incomus/yandex-practicum/blob/main/12.%20Teacher-student%20model/Churn.ipynb) - [Teacher-student model](#Customer-Churn-Prediction)
+- [Oil Well Location Selection](https://github.com/Incomus/yandex-practicum/blob/main/13.%20Machine%20learning%20in%20business/well_loc.ipynb) - [Machine learning in business](#Oil-Well-Location-Selection)
+- [Oil Well Location Selection](https://github.com/Incomus/yandex-practicum/blob/main/14.%20Summary%20project%202/gold_ore.ipynb) - Summary project 2
+- [Protection of Clients' Personal Data](https://github.com/Incomus/yandex-practicum/blob/main/15.%20Linear%20algebra/encryption.ipynb) - Linear algebra
+- [Determination of Car Prices](https://github.com/Incomus/yandex-practicum/blob/main/16.%20Numerical%20methods/auto_cost.ipynb) - Numerical methods
+- [Taxi Order Forecasting](https://github.com/Incomus/yandex-practicum/blob/main/17.%20Time%20series/taxi_forecast.ipynb) - Time series
+- [Online Store](https://github.com/Incomus/yandex-practicum/blob/main/18.%20Machine%20learning%20for%20texts/toxic_comments.ipynb) - Machine learning for texts
+- [Determining the age of buyers](https://github.com/Incomus/yandex-practicum/blob/main/19.%20Computer%20vision/vision.ipynb) - Computer vision
+- [Basic SQL](https://github.com/Incomus/yandex-practicum/blob/main/20.%20Basic%20SQL/sql_project.md)
+- [Industry](https://github.com/Incomus/yandex-practicum/blob/main/24.%20Final%20project/industry.ipynb) - Final project
 
 
 # Yandex Music Study
@@ -156,7 +164,7 @@ Here are some examples of the dataset:
 
 Future analyses could include a joint study of the presence of children and marital status.
 
-# [Research of Advertisements for the Sale of Apartments](https://github.com/Incomus/yandex-practicum/blob/main/7.%20Exploratory%20data%20analysis/real_estate_ads.ipynb)
+# Research of Advertisements for the Sale of Apartments
 ## Exploratory Data Analysis
 
 This project analyzes data from Yandex.Realty, an archive of apartment sale advertisements in St. Petersburg and nearby areas over several years. The objective is to determine market values, identify anomalies, and detect fraudulent activities for developing an automated tracking system.
@@ -236,7 +244,7 @@ This project analyzes data from Yandex.Realty, an archive of apartment sale adve
 
 The dataset includes extensive data on apartment sales, covering parameters such as area, price, and location. Analysis revealed significant correlations between apartment size and price, particularly in Saint Petersburg where proximity to the city center affects pricing dynamics. Insights gained from this study can aid in market predictions and anomaly detection for real estate transactions.
 
-# [Cellular Operator Tariffs Analysis](https://github.com/Incomus/yandex-practicum/blob/main/8.%20Statistical%20data%20analysis/cellular_tarifs.ipynb)
+# Cellular Operator Tariffs Analysis
 ## Statistical data analysis
 
 You are an analyst working for a cellular operator. Customers are offered two tariff plans: "Smart" and "Ultra". To adjust the advertising budget, the commercial department wants to understand which tariff brings in more money.
@@ -284,7 +292,7 @@ You are an analyst working for a cellular operator. Customers are offered two ta
 - Internet usage peaks vary with Smart users typically using 15–17 GB and Ultra users 19–21 GB.
 - Hypothesis testing indicates significant differences in average revenue between "Ultra" and "Smart" tariff users (p-value < 0.05).
 
-# [Researching Historical Video Game Data](https://github.com/Incomus/yandex-practicum/blob/main/10.%20Summary%20project%201/vg_research.ipynb)
+# Researching Historical Video Game Data
 ## Summary project 1
 
 - **Name**: The name of the game
@@ -364,7 +372,7 @@ Games rated Mature (M) tended to sell better in North America and Europe, while 
 - PS4 and Xbox One emerged as promising platforms, with action and shooter genres being the most profitable based on average sales.
 
 
-# [Introduction to Machine Learning](https://github.com/Incomus/yandex-practicum/blob/main/11.%20Introduction%20to%20machine%20learning/users_behavior.ipynb)
+# Introduction to Machine Learning
 
 This project explores the classification of suitable tariffs based on customer behavior data. The goal is to achieve a model accuracy of at least 75% on a test sample.
 
@@ -425,7 +433,7 @@ The highest accuracy was achieved by RandomForestClassifier, demonstrating the s
 - LogisticRegression consistently showed lower accuracy compared to tree-based models.
 
 
-# [Customer Churn Prediction](https://github.com/Incomus/yandex-practicum/blob/main/12.%20Teacher-student%20model/Churn.ipynb)
+# Customer Churn Prediction
 ## Teacher-student model
 
 Clients are leaving Beta Bank each month, prompting the need to predict customer churn based on historical data. The goal is to build a model with the highest possible F1-measure, aiming for 0.59 on the test sample.
@@ -480,7 +488,7 @@ The RandomForestClassifier with balanced class weights provided the highest F1-s
 - **Business Recommendations**: Implement strategies based on predicted churn probabilities to proactively retain customers and optimize marketing efforts.
 
 
-# [Oil Well Location Selection](https://github.com/Incomus/yandex-practicum/blob/main/13.%20Machine%20learning%20in%20business/well_loc.ipynb)
+# Oil Well Location Selection
 ## Machine learning in business
 
 We analyzed data from three regions to determine the optimal location for drilling oil wells based on profitability and risk using machine learning and statistical techniques.
