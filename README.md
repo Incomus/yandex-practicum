@@ -60,8 +60,8 @@
 - **Third Hypothesis**: Not confirmed - similar genre preferences in both cities.
 
 
-# Borrower Reliability Research
-## [Data preprocessing](https://github.com/Incomus/yandex-practicum/blob/main/6.%20Data%20preprocessing/prep.ipynb)
+# [Borrower Reliability Research](https://github.com/Incomus/yandex-practicum/blob/main/6.%20Data%20preprocessing/prep.ipynb)
+## Data preprocessing
 
 
 ## Overview
