@@ -7,6 +7,7 @@
 - [Researching Historical Video Game Data](#Researching-Historical-Video-Game-Data) - Summary project 1
 - [Introduction to Machine Learning](#Introduction-to-Machine-Learning)
 - [Customer Churn Prediction](#Customer-Churn-Prediction) - Teacher-student model
+- [Oil Well Location Selection](#Oil-Well-Location-Selection) - Machine learning in business
 
 
 # [Yandex Music Study](https://github.com/Incomus/yandex-practicum/blob/main/5.%20Basic%20Python/big-city-music.ipynb)
@@ -477,4 +478,74 @@ The RandomForestClassifier with balanced class weights provided the highest F1-s
 - **Impact of Features**: Age, number of products used, and account balance were identified as the most influential factors in predicting churn.
 - **Model Validation**: The model's performance on the test sample confirmed its robustness, achieving an F1-score of 0.620 and AUC-ROC of 0.845.
 - **Business Recommendations**: Implement strategies based on predicted churn probabilities to proactively retain customers and optimize marketing efforts.
-```
+
+
+# [Oil Well Location Selection](https://github.com/Incomus/yandex-practicum/blob/main/13.%20Machine%20learning%20in%20business/well_loc.ipynb)
+## Machine learning in business
+We analyzed oil samples from three regions, each with 10,000 fields, measuring oil quality and reserve volume. The objective was to build a machine learning model to determine the most profitable region for oil mining and assess potential profits and risks using the Bootstrap technique.
+
+## Steps to Select a Location:
+
+- Search for deposits in each region and determine characteristic values.
+- Build a model to estimate reserve volumes.
+- Select deposits with the highest estimated values within budget constraints.
+- Calculate total profit from selected fields.
+
+## Data Description
+
+Geological exploration data for three regions (`geo_data_0`, `geo_data_1`, `geo_data_2`):
+
+- `id`: Unique identifier of the well
+- `f0`, `f1`, `f2`: Point characteristics (features)
+- `product`: Volume of reserves in the well (thousand barrels)
+
+## Purpose of the Study
+
+- Build models to forecast well reserve volumes in each region.
+- Compare regions based on profitability and risk.
+- Apply Bootstrap technique to assess risks and profitability.
+
+## Brief Report
+
+Data was obtained from three CSV files for the three regions (`geo_data_0.csv` to `geo_data_2.csv`).
+
+- Three linear regression models were built for each region, and predictions were obtained for validation samples.
+- The Bootstrap technique was applied to calculate average profits, confidence intervals, and risk of losses, proposing an optimal region.
+
+## Data Overview
+
+Data overview for each region:
+
+- `geo_data_0`:
+  - Number of records: 100,000
+  - Columns: `id`, `f0`, `f1`, `f2`, `product`
+  - Memory usage: 3.8 MB
+
+- `geo_data_1`:
+  - Number of records: 100,000
+  - Columns: `id`, `f0`, `f1`, `f2`, `product`
+  - Memory usage: 3.8 MB
+
+- `geo_data_2`:
+  - Number of records: 100,000
+  - Columns: `id`, `f0`, `f1`, `f2`, `product`
+  - Memory usage: 3.8 MB
+
+## Model Creation and Testing
+
+Since linear regression with three parameters is used, a third-order polynomial was applied. Each dataset (`geo_data_0`, `geo_data_1`, `geo_data_2`) was processed individually using the following steps:
+
+- Data preprocessing involved removing the `id` column as it doesn't contribute to the model.
+- Polynomial features were generated for training and validation.
+- Linear regression models were trained and tested.
+- Performance metrics including R-squared score, average product volume, and root-mean-square error (RMSE) were computed for each region.
+
+|         | `geo_data_0` | `geo_data_1` | `geo_data_2` |
+|---------|--------------|--------------|--------------|
+| Score   | 0.285        | 1.000        | 0.253        |
+| Product | 92.305       | 68.866       | 95.062       |
+| RMSE    | 37.432       | 0.776        | 38.592       |
+
+These metrics provide insights into the model's performance and the potential profitability of each region.
+
+
